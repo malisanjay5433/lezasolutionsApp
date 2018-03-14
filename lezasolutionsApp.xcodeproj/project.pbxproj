@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1B84B82059B2AC000281C5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B84B72059B2AC000281C5 /* ImageLoader.swift */; };
+		9B1B84BA2059B2B1000281C5 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B84B92059B2B1000281C5 /* RoundedView.swift */; };
+		9B2E4C9520599D9A0091971C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E4C9420599D9A0091971C /* DataManager.swift */; };
+		9B2E4C9C2059A93C0091971C /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E4C9B2059A93C0091971C /* ProductCollectionCell.swift */; };
+		9B40C1642059B223007D9A20 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40C1632059B223007D9A20 /* ProductModel.swift */; };
 		9BBC581F20598B13008B81F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC581E20598B13008B81F7 /* AppDelegate.swift */; };
-		9BBC582120598B13008B81F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC582020598B13008B81F7 /* ViewController.swift */; };
+		9BBC582120598B13008B81F7 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC582020598B13008B81F7 /* ProductListViewController.swift */; };
 		9BBC582420598B13008B81F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC582220598B13008B81F7 /* Main.storyboard */; };
 		9BBC582720598B13008B81F7 /* lezasolutionsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC582520598B13008B81F7 /* lezasolutionsApp.xcdatamodeld */; };
 		9BBC582920598B13008B81F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC582820598B13008B81F7 /* Assets.xcassets */; };
@@ -16,9 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1B84B72059B2AC000281C5 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		9B1B84B92059B2B1000281C5 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		9B2E4C9420599D9A0091971C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9B2E4C9B2059A93C0091971C /* ProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
+		9B40C1632059B223007D9A20 /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductModel.swift; path = ../../../../.Trash/ProductModel.swift; sourceTree = "<group>"; };
 		9BBC581B20598B13008B81F7 /* lezasolutionsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lezasolutionsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBC581E20598B13008B81F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BBC582020598B13008B81F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BBC582020598B13008B81F7 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		9BBC582320598B13008B81F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BBC582620598B13008B81F7 /* lezasolutionsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lezasolutionsApp.xcdatamodel; sourceTree = "<group>"; };
 		9BBC582820598B13008B81F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +47,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B2E4C9320599D9A0091971C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				9B2E4C9420599D9A0091971C /* DataManager.swift */,
+			);
+			name = DataManager;
+			path = "../../../Documents/Apps/OTWL Tracker/OTWL Tracker/DataManager";
+			sourceTree = "<group>";
+		};
+		9B2E4C9A2059A9220091971C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9B2E4C9B2059A93C0091971C /* ProductCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9B40C1572059B159007D9A20 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9B1B84B92059B2B1000281C5 /* RoundedView.swift */,
+				9B1B84B72059B2AC000281C5 /* ImageLoader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9B40C15A2059B1A7007D9A20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B40C1632059B223007D9A20 /* ProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B40C15D2059B1C1007D9A20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BBC582020598B13008B81F7 /* ProductListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B40C15E2059B1D5007D9A20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BBC582220598B13008B81F7 /* Main.storyboard */,
+				9BBC582A20598B13008B81F7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9BBC581220598B13008B81F7 = {
 			isa = PBXGroup;
 			children = (
@@ -57,10 +118,13 @@
 			isa = PBXGroup;
 			children = (
 				9BBC581E20598B13008B81F7 /* AppDelegate.swift */,
-				9BBC582020598B13008B81F7 /* ViewController.swift */,
-				9BBC582220598B13008B81F7 /* Main.storyboard */,
+				9B40C15A2059B1A7007D9A20 /* Model */,
+				9B40C1572059B159007D9A20 /* Helper */,
+				9B2E4C9A2059A9220091971C /* Cell */,
+				9B2E4C9320599D9A0091971C /* DataManager */,
+				9B40C15D2059B1C1007D9A20 /* Controller */,
+				9B40C15E2059B1D5007D9A20 /* View */,
 				9BBC582820598B13008B81F7 /* Assets.xcassets */,
-				9BBC582A20598B13008B81F7 /* LaunchScreen.storyboard */,
 				9BBC582D20598B13008B81F7 /* Info.plist */,
 				9BBC582520598B13008B81F7 /* lezasolutionsApp.xcdatamodeld */,
 			);
@@ -139,8 +203,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BBC582120598B13008B81F7 /* ViewController.swift in Sources */,
+				9BBC582120598B13008B81F7 /* ProductListViewController.swift in Sources */,
+				9B1B84BA2059B2B1000281C5 /* RoundedView.swift in Sources */,
+				9B2E4C9C2059A93C0091971C /* ProductCollectionCell.swift in Sources */,
+				9B40C1642059B223007D9A20 /* ProductModel.swift in Sources */,
+				9B2E4C9520599D9A0091971C /* DataManager.swift in Sources */,
 				9BBC581F20598B13008B81F7 /* AppDelegate.swift in Sources */,
+				9B1B84B82059B2AC000281C5 /* ImageLoader.swift in Sources */,
 				9BBC582720598B13008B81F7 /* lezasolutionsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
