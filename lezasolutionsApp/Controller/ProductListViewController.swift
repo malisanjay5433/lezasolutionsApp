@@ -68,6 +68,8 @@ extension ProductListViewController:UICollectionViewDelegate,UICollectionViewDat
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ProductCollectionCell
             let data = self.data[indexPath.row]
+            cell.layer.cornerRadius = 5.0
+            cell.layer.masksToBounds  = true
             cell.off_Label.text = "15% OFF"
             cell.kwd_Label.text = data.regular_price
             cell.kwdWithoutOffer_Label.text = data.final_price
